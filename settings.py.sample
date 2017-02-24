@@ -1,0 +1,38 @@
+#FIXME:	this sample file contains fake settings values, which will only load tests Ads.
+#	you should update with yours...
+
+INTERSTITIAL_UNIT_ID = "ca-app-pub-3940256099942544/1033173712"
+# value taken from https://github.com/googleads/googleads-mobile-android-examples/blob/master/admob/InterstitialExample/app/src/main/res/values/strings.xml#L9
+
+BANNER_UNIT_ID = "ca-app-pub-3940256099942544/6300978111"
+# value taken from https://github.com/googleads/googleads-mobile-android-examples/blob/master/admob/BannerExample/app/src/main/res/values/strings.xml#L9
+
+BANNER_TYPE = "SMART_BANNER"
+"""
+possible values for BANNER_TYPE:
+
+	BANNER			Mobile Marketing Association (MMA) banner ad size (320x50 density-independent pixels).
+	FULL_BANNER		Interactive Advertising Bureau (IAB) full banner ad size (468x60 density-independent pixels).
+	LARGE_BANNER		Large banner ad size (320x100 density-independent pixels).
+	LEADERBOARD		Interactive Advertising Bureau (IAB) leaderboard ad size (728x90 density-independent pixels).
+	MEDIUM_RECTANGLE	Interactive Advertising Bureau (IAB) medium rectangle ad size (300x250 density-independent pixels).
+	SMART_BANNER		A dynamically sized banner that is full-width and auto-height.
+	WIDE_SKYSCRAPER		IAB wide skyscraper ad size (160x600 density-independent pixels).
+"""
+
+BANNER_POS = "ALIGN_PARENT_TOP" 
+"""
+possible values are:
+	ALIGN_PARENT_TOP
+	ALIGN_PARENT_BOTTOM
+"""
+
+ANDROID_TEST_HASH = [""]
+""" list of device hashes you're using for testing of your real ads; thoses hashes may be found on the logs as
+    I/Ads     (18386): Use AdRequest.Builder.addTestDevice("YOUR_DEVICE_HASH_HERE") to get test ads on this device.
+    advice: don't mess with admob by loading real ads without giving a device hash, or you'll earn some pennies before to be kicked from the service!
+""" 
+
+IOS_TEST_HASH = ""
+""" same as for android, except that as I've only had one device on which to test, that's not a list...
+"""

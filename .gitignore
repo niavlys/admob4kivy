@@ -1,0 +1,4 @@
+.buildozer/
+google-play-services_lib/
+bin/
+settings.py
